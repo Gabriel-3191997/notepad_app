@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notepad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="notepad">
+    <div class="menu-bar">
+        <div class="icon">
+            <img src="images/download (13).jfif" alt="logo">
+        </div>
+      <div class="menu-item">File
+        <div class="dropdown">
+          <button onclick="openFile()">Open</button>
+          <button onclick="saveFile()">Save</button>
+        </div>
+      </div>
+      <div class="menu-item">Edit
+        <div class="dropdown">
+          <button onclick="copyText()">Copy</button>
+          <button onclick="cutText()">Cut</button>
+          <button onclick="pasteText()">Paste</button>
+        </div>
+      </div>
+      <div class="menu-item">Format
+        <div class="dropdown">
+          <button onclick="formatText()">Font</button>
+          <button onclick="highlightText()">Highlight</button>
+        </div>
+      </div>
+      <div class="menu-item">View</div>
+      <div class="menu-item">Help</div>
+    </div>
+    <div class="content">
+      <textarea id="notepad-content"></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
